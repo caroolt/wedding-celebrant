@@ -5,15 +5,28 @@ interface EventoCardProps {
   estilo?: string;
   description?: string;
   bgPath: string;
+  onMouseEnter?: () => void;
+  onMouseLeave?: () => void;
 }
 
-const  EventoCard = ({casamento, estilo, description, bgPath}: EventoCardProps) => {
+const  EventoCard = ({casamento, estilo, description, bgPath, onMouseEnter, onMouseLeave}: EventoCardProps) => {
   const [isHovered, setisHovered] = useState(false);
+  
+  const handleMouseEnter = () => {
+    setisHovered(true);
+    onMouseEnter?.();
+  };
+
+  const handleMouseLeave = () => {
+    setisHovered(false);
+    onMouseLeave?.();
+  };
+
   return (
     <div 
-      onMouseEnter={() => setisHovered((prev) => !prev)} 
-      onMouseLeave={() => setisHovered((prev) => !prev)} 
-             className="rounded-2xl w-3xs h-2/3 bg-brown-80 bg-cover bg-center bg-no-repeat flex-shrink-0 relative overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105" 
+      onMouseEnter={handleMouseEnter} 
+      onMouseLeave={handleMouseLeave} 
+             className="rounded-2xl w-64 h-3/4 bg-bro wn-80 bg-cover bg-center bg-no-repeat flex-shrink-0 relative overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105" 
       style={{
         background: `url(${bgPath}) lightgray 50% / cover no-repeat`,
       }}

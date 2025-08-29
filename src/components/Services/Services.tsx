@@ -1,4 +1,3 @@
-import Navbar from "../Navbar/Navbar"
 import Card from "./Cards/Card";
 
 const Services = () => {
@@ -28,8 +27,7 @@ const Services = () => {
 
   return (
     <div className="w-screen h-screen relative overflow-hidden">
-      <Navbar headColor="text-white-80"/>
-      <div className="flex w-full h-full flex-col items-center justify-center -mt-2 gap-6 relative z-20">
+      <div className="flex w-full h-full flex-col items-center justify-center mt-[5%] gap-6 relative z-20">
         <h3 className="text-7xl text-white-custom font-serif font-bold text-center">
         Cuidamos de Cada Detalhe
         </h3>

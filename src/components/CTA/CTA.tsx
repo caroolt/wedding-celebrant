@@ -1,10 +1,8 @@
-import Navbar from "../Navbar/Navbar";
 import { ArrowUpRight } from 'lucide-react';
 
 const CTA = () => {
   return (
-    <div className="w-screen h-screen relative overflow-hidden">
-      <Navbar/>
+    <div className="w-screen h-[80vh] flex flex-col gap-10 pb-20 relative overflow-hidden">
       <div className="flex flex-col justify-center items-start  h-full gap-8 p-20 w-3/4">
         <h2 className="text-brown text-7xl font-serif font-bold">Vamos Planejar o Seu Para Sempre?</h2>
         <p className="font-sans text-3xl text-brown">Cada história de amor merece uma celebração inesquecível. Conte com a Lumière Eventos para transformar o seu sonho em realidade.</p>
@@ -15,6 +13,7 @@ const CTA = () => {
           </div>
         </button>
       </div>
+      <span className="text-brown-50 font-sans text-base text-center">© 2025 Carolina Teixeira</span>
     </div>
   )
 }
