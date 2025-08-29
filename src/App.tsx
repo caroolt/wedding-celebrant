@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.set(fixedNavbarRef.current, { opacity: 0, y: -20 })
+      gsap.set(fixedNavbarRef.current, { opacity: 0, y: -100 })
 
       gsap.to(fixedNavbarRef.current, {
         opacity: 1,

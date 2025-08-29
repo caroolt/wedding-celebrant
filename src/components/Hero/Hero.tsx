@@ -68,8 +68,10 @@ const Hero = () => {
 
   return (
     <div ref={heroRef} className="w-screen h-screen relative overflow-hidden" style={{ willChange: 'transform' }}>
-      <Navbar/>
-      <div ref={titleRef} className="flex items-center justify-center w-screen mt-20 relative z-0">
+      <div className="relative z-[100] pointer-events-auto">
+        <Navbar/>
+      </div>
+      <div ref={titleRef} className="flex items-center justify-center w-screen mt-20 relative z-10 pointer-events-none">
         <h1 className="w-3/4 text-8xl font-serif text-center font-bold text-brown-80">ONDE O SEU AMOR ENCONTRA O PARA SEMPRE</h1>
       </div>
       <div 

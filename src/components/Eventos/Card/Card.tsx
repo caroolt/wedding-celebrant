@@ -46,7 +46,7 @@ const  EventoCard = ({casamento, estilo, description, bgPath, onMouseEnter, onMo
         }`}
       >
         <div className="flex justify-end">
-        <span className="inline-flex items-center font-sans px-3 py-1 text-sm justify-center relative bg-gray-200/10 backdrop-blur-[1px] overflow-hidden rounded-full transition-all duration-300 hover:scale-150" style={{boxShadow: '0px 12px 15px 0px rgba(0,0,0,0.25), inset 10px 10px 15px 0px rgba(0,0,0,0.25), inset -10px -10px 15px 0px rgba(255,255,255,0.25), inset 1px 1px 1px 0px rgba(255,255,255,0.22), inset -1px -1px 1px 0px rgba(255,255,255,0.22)'}}>
+        <span className="inline-flex items-center font-sans px-3 py-1 text-sm justify-center relative bg-gray-200/10 backdrop-blur-[1px] overflow-hidden rounded-full" style={{boxShadow: '0px 12px 15px 0px rgba(0,0,0,0.25), inset 10px 10px 15px 0px rgba(0,0,0,0.25), inset -10px -10px 15px 0px rgba(255,255,255,0.25), inset 1px 1px 1px 0px rgba(255,255,255,0.22), inset -1px -1px 1px 0px rgba(255,255,255,0.22)'}}>
             {estilo}
           </span>
         </div>
